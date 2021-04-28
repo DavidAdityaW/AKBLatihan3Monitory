@@ -1,0 +1,58 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitethree"
+    tools:context=".WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relayImageBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/relayBottom">
+        <ImageView
+            android:id="@+id/ivImageBanner"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_get_start_timitory" />
+
+        <TextView
+            android:id="@+id/tvTitleBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Monitory Membantu Anda \n Mengontrol HP Anak"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="20dp"
+        android:paddingVertical="30dp"
+        android:paddingHorizontal="35dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btnMulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_yellow"
+            android:text="Mulai"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
